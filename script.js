@@ -6,10 +6,12 @@
      const box = document.querySelectorAll(".box"); 
      let player = document.getElementById("player"); 
      
-     const reset = document.querySelector("button"); 
+     
      const game =["", "", ""]; 
      
-     let nbClick= 0; 
+     let nbClick= 0;
+     let count = 0;
+     let countScore = 0;
      
      
      
@@ -19,35 +21,45 @@
              
              if(nbClick % 2 === 1) {
                  player.innerText = "player X à vous de jouer"
-                 box[i].innerText= "0"
-                 box[i].removeEventListener()
+                 box[i].innerText= "O"
              }
              
              else if (nbClick % 2 === 0) {
                  player.innerText = "player 0 à vous de jouer"
-                 box[i].innerText= "x"
-                 box[i].removeEventListener()
+                 box[i].innerText= "X"
              }
          })
      }
      
- })
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+     //récuperer la valeur du bouton où utilisateur clique
+ })   
+// document.querySelectorAll(".case").forEach(cell => cell.addEventListener("click", gestionClicCase))
+    const btnreset = document.querySelector("button").addEventListener("click", recommencer) {
+        window.alert("Hello!");
+    });
+     
 
+ 
+ 
+ 
+ 
+//  const button = document.getElementById("validation-button");
+
+ 
+ 
+ 
+//      Array.from(reset).forEach(button => {
+//             button.addEventListener('click', () => {
+            
+//             const buttonCliked = button.innerText
+//             button.removeEventListener
+            
+//             //comparer cette valeur avec la valeur de la bonneReponse de l'objet courant
+            
+//             count++
+//         })
+//     })
+ 
  // tour de jeu : déclaration d'un tableau avec id,question,reponse,bonneReponse
 
 //   let case1=document.getElementsByClassName("case")[1];
