@@ -4,10 +4,10 @@
 
      const container = document.querySelector(".container");
      const box = document.querySelectorAll(".box"); 
-     let player = document.getElementById("player"); 
+     let joueur = document.getElementById("player"); 
+     const reset = document.querySelector("button"); 
      
-     
-     const game =["", "", ""]; 
+     const jeu =["", "", ""]; 
      
      let nbClick= 0;
      let count = 0;
@@ -20,34 +20,25 @@
              nbClick++
              
              if(nbClick % 2 === 1) {
-                 player.innerText = "player X à vous de jouer"
+                 joueur.innerText = "joueur X à vous de jouer"
                  box[i].innerText= "O"
              }
              
              else if (nbClick % 2 === 0) {
-                 player.innerText = "player 0 à vous de jouer"
+                 joueur.innerText = "joueur 0 à vous de jouer"
                  box[i].innerText= "X"
              }
          })
      }
      
      //récuperer la valeur du bouton où utilisateur clique
- })   
-// document.querySelectorAll(".case").forEach(cell => cell.addEventListener("click", gestionClicCase))
-    const btnreset = document.querySelector("button").addEventListener("click", recommencer) {
-        window.alert("Hello!");
-    });
      
-
- 
- 
- 
+    let rejouer = button.addEventListener("click",() =>{
+        reset.innerText =" Vous allez recharger la partie"
+    })
+ })  
  
 //  const button = document.getElementById("validation-button");
-
- 
- 
- 
 //      Array.from(reset).forEach(button => {
 //             button.addEventListener('click', () => {
             
