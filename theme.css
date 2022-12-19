@@ -2,15 +2,16 @@ body{
     text-align: center;
 }
 
-#jeu{
+#game{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 300px;
     margin: auto;
 }
 
-.case{
+.box{
     border: 1px solid black;
+    
     height: 100px;
     line-height: 100px;
     font-size: 60px;
@@ -18,4 +19,16 @@ body{
 
 button {
     margin-top: 2em;
+    width: 90px; 
+    height: 90px;
+    font-family: 'Rubik Vinyl', cursive;
+    letter-spacing: 0.5rem;
+    color: purple;
+    background-color: white;
+    
+}
+
+h1 {
+    font-family: 'Rubik Vinyl', cursive;
+    color: purple;
 }
